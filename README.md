@@ -30,9 +30,10 @@ public class Main {
         System.out.println("Subtraction: " + calc.sub(a, b));
         System.out.println("Multiplication: " + calc.mul(a, b));
         System.out.println("Division: " + calc.div(a, b));
+       ![WhatsApp Image 2026-03-28 at 8 56 11 AM](https://github.com/user-attachments/assets/f39a1571-3430-445d-ab80-1019068969e6)
+ 
 
-![Uploading WhatsApp Image 2026-03-28 at 8.56.11 AM.jpeg…]()
-
+ 
         
     }
 }
