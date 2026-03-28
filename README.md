@@ -32,6 +32,10 @@ public class Main {
         System.out.println("Division: " + calc.div(a, b));
   ![WhatsApp Image 2026-03-28 at 8 56 11 AM](https://github.com/user-attachments/assets/509d3396-4b61-4cbf-b59f-720c97b0d15a)
 
+  [Ass-2: WAP to test all three loop for same problem (for,while,do while)]
+  
+  
+
 
  
         
