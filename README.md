@@ -30,5 +30,9 @@ public class Main {
         System.out.println("Subtraction: " + calc.sub(a, b));
         System.out.println("Multiplication: " + calc.mul(a, b));
         System.out.println("Division: " + calc.div(a, b));
+
+![Uploading WhatsApp Image 2026-03-28 at 8.56.11 AM.jpeg…]()
+
+        
     }
 }
