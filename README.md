@@ -31,7 +31,7 @@ public class ArithmeticLogic {
 }
 '''
 
-Enter first number: 10
+ Enter first number: 10
 Enter second number: 5
 
 Addition: 15
