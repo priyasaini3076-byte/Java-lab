@@ -90,7 +90,7 @@ System.out.println("Hi");
 ## assi-3
 '''
 
-class DistanceAdd {
+ public class DistanceAdd {
 
  public static void main(String[] args) {
         
