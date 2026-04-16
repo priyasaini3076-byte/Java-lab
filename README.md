@@ -125,7 +125,11 @@ class DistanceAdd {
             + totalCentimeter + " centimeter");
     }
     
-} 
+}
+
+<img width="416" height="50" alt="image" src="https://github.com/user-attachments/assets/30875932-b492-40cc-848b-e86a9490a9f1" />
+
+
           
     
  
