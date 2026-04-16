@@ -90,40 +90,35 @@ System.out.println("Hi");
 ## assi-3
 '''
 
- public class DistanceAdd {
-
- public static void main(String[] args) {
+class DistanceAdd {
+    public static void main(String[] args) {
         
-        int m1 = 2;
-         
+         int m1 = 2;
         int c1 = 80;
 
+         
         int m2 = 3;
-        
         int c2 = 50;
 
+         
         int totalMeter = m1 + m2;
-        
         int totalCentimeter = c1 + c2;
 
-         if (totalCentimeter >= 100) {
-           
-             totalMeter += totalCentimeter / 100;
-            
-             totalCentimeter = totalCentimeter % 100;
-            
+         
+        if (totalCentimeter >= 100) {
+            totalMeter += totalCentimeter / 100;
+            totalCentimeter = totalCentimeter % 100;
         }
 
-          System.out.println("Total Distance = "+ totalMeter + " meter  + totalCentimeter + " centimeter");
-            
+         
+        System.out.println("Total Distance = " 
+            + totalMeter + " meter " 
+            + totalCentimeter + " centimeter");
     }
+} 
+          
     
-}
-
-'''
-
-
-
+ 
 
 
 
