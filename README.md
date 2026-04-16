@@ -17,3 +17,36 @@
 [program-9 collect the code of C language for any 5 operation convert the logic to java in object orented fashion](#assi-9)
 
 [program-10 Demostrate all three type of inheritance 1. single, 2.multilevel, 3.hierarchial](#assi-1-)
+
+
+## assi-1
+'''
+
+public class Cla{
+static int add(int a, int b){
+return a+b;
+}
+static int sub(int a, int b){
+return a-b;
+}
+static int mul(int a, int b){
+return a*b;
+}
+static int div(int a,int b){
+return a/b;
+}
+public static void main(String[]args){
+int n1=Integer.parseInt(args[0]);
+int n2=Integer.parseInt(args[1]); 
+System.out.println(add(n1,n2));  
+System.out.println(sub(n1,n2));
+System.out.println(mul(n1,n2)); 
+System.out.println(div(n1,n2));             
+}
+}
+'''
+
+<img width="423" height="117" alt="image" src="https://github.com/user-attachments/assets/82229e4f-e74c-4ee9-a9bd-1937d2d9ba52" />
+
+
+
