@@ -1,6 +1,6 @@
-[Program 1 WAP for arithmetic logic](#Assi-1)      
+[Program 1 WAP for arithmetic logic](#assi-1)      
 
- ## Assi-1
+ ## assi-1
  '''
 
  import java.util.Scanner;
@@ -8,7 +8,6 @@
 public class ArithmeticLogic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         double a, b;
 
         System.out.print("Enter first number: ");
