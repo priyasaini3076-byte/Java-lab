@@ -87,6 +87,45 @@ System.out.println("Hi");
 <img width="105" height="39" alt="image" src="https://github.com/user-attachments/assets/f4933cd6-4986-4305-8041-ba9cf7937e6c" />
 
 
+## assi-3
+'''
+
+class DistanceAdd {
+
+    public static void main(String[] args) {
+        
+         int m1 = 2;
+         
+        int c1 = 80;
+
+        int m2 = 3;
+        
+        int c2 = 50;
+
+        int totalMeter = m1 + m2;
+        
+        int totalCentimeter = c1 + c2;
+
+           if (totalCentimeter >= 100) {
+           
+            totalMeter += totalCentimeter / 100;
+            
+            totalCentimeter = totalCentimeter % 100;
+            
+        }
+
+         System.out.println("Total Distance = " 
+         
+            + totalMeter + " meter " 
+            
+            + totalCentimeter + " centimeter");
+            
+    }
+    
+}
+
+
+
 
 
 
