@@ -92,9 +92,9 @@ System.out.println("Hi");
 
 class DistanceAdd {
 
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         
-         int m1 = 2;
+        int m1 = 2;
          
         int c1 = 80;
 
@@ -106,19 +106,15 @@ class DistanceAdd {
         
         int totalCentimeter = c1 + c2;
 
-           if (totalCentimeter >= 100) {
+         if (totalCentimeter >= 100) {
            
-            totalMeter += totalCentimeter / 100;
+             totalMeter += totalCentimeter / 100;
             
-            totalCentimeter = totalCentimeter % 100;
+             totalCentimeter = totalCentimeter % 100;
             
         }
 
-         System.out.println("Total Distance = " 
-         
-            + totalMeter + " meter " 
-            
-            + totalCentimeter + " centimeter");
+          System.out.println("Total Distance = "+ totalMeter + " meter  + totalCentimeter + " centimeter");
             
     }
     
