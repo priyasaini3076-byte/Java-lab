@@ -69,5 +69,30 @@ System.out.println(div(n1,n2));
 
 <img width="423" height="117" alt="image" src="https://github.com/user-attachments/assets/82229e4f-e74c-4ee9-a9bd-1937d2d9ba52" />
 
+## assi-2
+'''
+
+public class Add{
+
+public static void main(String[]args)
+
+{
+
+System.out.println("Hi");
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
