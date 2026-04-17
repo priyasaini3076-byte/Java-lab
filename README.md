@@ -93,30 +93,41 @@ System.out.println("Hi");
 import java.util.Scanner;
 
 public class DistanceAddition {
+
     public static void main(String[] args) {
+    
         Scanner sc = new Scanner(System.in);
 
         int m1, cm1, m2, cm2;
+        
         int meter, cm;
 
         System.out.println("Enter first distance (meter and centimeter): ");
+        
         m1 = sc.nextInt();
+        
         cm1 = sc.nextInt();
 
         System.out.println("Enter second distance (meter and centimeter): ");
+        
         m2 = sc.nextInt();
+        
         cm2 = sc.nextInt();
 
         meter = m1 + m2;
+        
         cm = cm1 + cm2;
 
         if (cm >= 100) {
+        
             meter = meter + (cm / 100);
+            
             cm = cm % 100;
         }
 
         System.out.println("Sum of distances = " + meter + " meter " + cm + " centimeter");
     }
+    
 }
 '''
 <img width="418" height="170" alt="image" src="https://github.com/user-attachments/assets/1927a594-24ca-40bd-bff8-5b5019211f39" />
