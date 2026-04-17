@@ -246,6 +246,57 @@ class Time {
 '''
 <img width="424" height="200" alt="image" src="https://github.com/user-attachments/assets/b1de7738-3d92-4b60-bb6d-b4a8276d1c76" />
 
+## assi-6
+'''
+
+import java.util.Scanner;
+
+class Distance {
+    int meter, centimeter, millimeter;
+
+    void addDistance(int m1, int c1, int mm1, int m2, int c2, int mm2) {
+        meter = m1 + m2;
+        centimeter = c1 + c2;
+        millimeter = mm1 + mm2;
+
+        if (millimeter >= 10) {
+            centimeter = centimeter + millimeter / 10;
+            millimeter = millimeter % 10;
+        }
+
+        if (centimeter >= 100) {
+            meter = meter + centimeter / 100;
+            centimeter = centimeter % 100;
+        }
+    }
+
+    void display() {
+        System.out.println("Total Distance = " + meter + " meter " + centimeter + " centimeter " + millimeter + " millimeter");
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int m1, c1, mm1, m2, c2, mm2;
+
+        System.out.print("Enter first distance (meter centimeter millimeter): ");
+        m1 = sc.nextInt();
+        c1 = sc.nextInt();
+        mm1 = sc.nextInt();
+
+        System.out.print("Enter second distance (meter centimeter millimeter): ");
+        m2 = sc.nextInt();
+        c2 = sc.nextInt();
+        mm2 = sc.nextInt();
+
+        Distance d = new Distance();   // object creation
+        d.addDistance(m1, c1, mm1, m2, c2, mm2);
+        d.display();
+    }
+}
+'''
+<img width="548" height="197" alt="image" src="https://github.com/user-attachments/assets/4919e0d6-4fbf-4e9e-b5bd-6ab0f7ae13ec" />
+
 
          
         
