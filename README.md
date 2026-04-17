@@ -21,34 +21,28 @@
 
 ## assi-1
 '''
-import java.util.Scanner;
-
-public class DistanceAddition {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int m1, cm1, m2, cm2;
-        int meter, cm;
-
-        System.out.println("Enter first distance (meter and centimeter): ");
-        m1 = sc.nextInt();
-        cm1 = sc.nextInt();
-
-        System.out.println("Enter second distance (meter and centimeter): ");
-        m2 = sc.nextInt();
-        cm2 = sc.nextInt();
-
-        meter = m1 + m2;
-        cm = cm1 + cm2;
-
-        if (cm >= 100) {
-            meter = meter + (cm / 100);
-            cm = cm % 100;
-        }
-
-        System.out.println("Sum of distances = " + meter + " meter " + cm + " centimeter");
-    }
-} 
+ public class Cla{
+static int add(int a, int b){
+return a+b;
+}
+static int sub(int a, int b){
+return a-b;
+}
+static int mul(int a, int b){
+return a*b;
+}
+static int div(int a,int b){
+return a/b;
+}
+public static void main(String[]args){
+int n1=Integer.parseInt(args[0]);
+int n2=Integer.parseInt(args[1]); 
+System.out.println(add(n1,n2));  
+System.out.println(sub(n1,n2));
+System.out.println(mul(n1,n2)); 
+System.out.println(div(n1,n2));             
+}
+}
 '''
 
 <img width="423" height="117" alt="image" src="https://github.com/user-attachments/assets/82229e4f-e74c-4ee9-a9bd-1937d2d9ba52" />
