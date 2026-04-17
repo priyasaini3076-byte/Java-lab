@@ -194,6 +194,58 @@ class Time {
 '''
 <img width="359" height="120" alt="image" src="https://github.com/user-attachments/assets/143cc42d-fde5-4d72-b173-21b504d62af5" />
 
+## assi-5
+'''
+
+import java.util.Scanner;
+
+class Time {
+    int hours, minutes, seconds;
+
+    void addTime(int h1, int m1, int s1, int h2, int m2, int s2) {
+        hours = h1 + h2;
+        minutes = m1 + m2;
+        seconds = s1 + s2;
+
+        if (seconds >= 60) {
+            minutes = minutes + seconds / 60;
+            seconds = seconds % 60;
+        }
+
+        if (minutes >= 60) {
+            hours = hours + minutes / 60;
+            minutes = minutes % 60;
+        }
+    }
+
+    void display() {
+        System.out.println("Total Time = " + hours + " hours " + minutes + " minutes " + seconds + " seconds");
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int h1, m1, s1, h2, m2, s2;
+
+        System.out.print("Enter first time (hours minutes seconds): ");
+        h1 = sc.nextInt();
+        m1 = sc.nextInt();
+        s1 = sc.nextInt();
+
+        System.out.print("Enter second time (hours minutes seconds): ");
+        h2 = sc.nextInt();
+        m2 = sc.nextInt();
+        s2 = sc.nextInt();
+
+        Time t = new Time();   // object creation
+        t.addTime(h1, m1, s1, h2, m2, s2);
+        t.display();
+    }
+}
+
+'''
+<img width="424" height="200" alt="image" src="https://github.com/user-attachments/assets/b1de7738-3d92-4b60-bb6d-b4a8276d1c76" />
+
 
          
         
