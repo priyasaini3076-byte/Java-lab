@@ -90,48 +90,40 @@ System.out.println("Hi");
 ## assi-3
 '''
 
-class DistanceAdd { 
+import java.util.Scanner;
 
+public class DistanceAddition {
     public static void main(String[] args) {
-        
-         int m1 = 2;
-         
-        int c1 = 80;
+        Scanner sc = new Scanner(System.in);
 
-         
-        int m2 = 3;
-        
-        int c2 = 50;
+        int m1, cm1, m2, cm2;
+        int meter, cm;
 
-         
-        int totalMeter = m1 + m2;
-        
-        int totalCentimeter = c1 + c2;
+        System.out.println("Enter first distance (meter and centimeter): ");
+        m1 = sc.nextInt();
+        cm1 = sc.nextInt();
 
-         
-        if (totalCentimeter >= 100) {
-        
-            totalMeter += totalCentimeter / 100;
-            
-            totalCentimeter = totalCentimeter % 100;
-            
+        System.out.println("Enter second distance (meter and centimeter): ");
+        m2 = sc.nextInt();
+        cm2 = sc.nextInt();
+
+        meter = m1 + m2;
+        cm = cm1 + cm2;
+
+        if (cm >= 100) {
+            meter = meter + (cm / 100);
+            cm = cm % 100;
         }
 
-         
-        System.out.println("Total Distance = " 
-        
-            + totalMeter + " meter " 
-            
-            + totalCentimeter + " centimeter");
+        System.out.println("Sum of distances = " + meter + " meter " + cm + " centimeter");
     }
-    
 }
+'''
+<img width="418" height="170" alt="image" src="https://github.com/user-attachments/assets/1927a594-24ca-40bd-bff8-5b5019211f39" />
 
-<img width="416" height="50" alt="image" src="https://github.com/user-attachments/assets/30875932-b492-40cc-848b-e86a9490a9f1" />
-
-
-          
-    
+         
+        
+   
  
 
 
