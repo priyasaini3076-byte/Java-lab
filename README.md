@@ -359,6 +359,198 @@ public class MainClass {
 '''
 <img width="191" height="97" alt="image" src="https://github.com/user-attachments/assets/7db3c8d9-cfc6-4cd4-87cd-44605b9ac669" />
 
+## assi-8
+'''
+
+public class MatrixOperations {
+
+    int[][] A = {
+
+        {1,2,3},
+        
+        {4,5,6},
+        
+        {7,8,9}
+        
+    };
+
+    int[][] B = {
+    
+        {9,8,7},
+        
+        {6,5,4},
+        
+        {3,2,1}
+        
+    };
+
+    void display(int[][] M){
+    
+        for(int i=0;i<3;i++){
+        
+            for(int j=0;j<3;j++){
+            
+                System.out.print(M[i][j]+" ");
+                
+            }
+            
+            System.out.println();
+            
+        }
+        
+    }
+
+    void transpose(){
+    
+        int[][] T = new int[3][3];
+
+        for(int i=0;i<3;i++){
+        
+            for(int j=0;j<3;j++){
+            
+                T[j][i] = A[i][j];
+                
+            }
+            
+        }
+
+        System.out.println("Transpose of Matrix A:");
+        
+        display(T);
+        
+    }
+
+    void sum(){
+    
+        int[][] S = new int[3][3];
+
+        for(int i=0;i<3;i++){
+        
+            for(int j=0;j<3;j++){
+            
+                S[i][j] = A[i][j] + B[i][j];
+                
+            }
+            
+        }
+
+        System.out.println("Sum of A and B:");
+        
+        display(S);
+        
+    }
+
+    void multiply(){
+    
+        int[][] M = new int[3][3];
+
+        for(int i=0;i<3;i++){
+        
+            for(int j=0;j<3;j++){
+            
+                for(int k=0;k<3;k++){
+                
+                    M[i][j] += A[i][k]*B[k][j];
+                    
+                }
+                
+            }
+            
+        }
+
+        System.out.println("Multiplication of A and B:");
+        
+        display(M);
+        
+    }
+
+    void rowSum(){
+    
+        for(int i=0;i<3;i++){
+        
+            int sum=0;
+            
+            for(int j=0;j<3;j++){
+            
+                sum += A[i][j];
+                
+            }
+            
+            System.out.println("Row "+(i+1)+" Sum = "+sum);
+            
+        }
+        
+    }
+
+    void columnSum(){
+    
+        for(int j=0;j<3;j++){
+        
+            int sum=0;
+            
+            for(int i=0;i<3;i++){
+            
+                sum += A[i][j];
+                
+            }
+            System.out.println("Column "+(j+1)+" Sum = "+sum);
+            
+        }
+        
+    }
+
+    void diagonalSum(){
+    
+        int p=0,s=0;
+
+        for(int i=0;i<3;i++){
+        
+            p += A[i][i];
+            
+            s += A[i][2-i];
+            
+        }
+
+        System.out.println("Primary Diagonal Sum = "+p);
+        
+        System.out.println("Secondary Diagonal Sum = "+s);
+        
+    }
+
+    public static void main(String[] args){
+    
+
+        MatrixOperations obj = new MatrixOperations();
+
+        System.out.println("Matrix A:");
+        
+        obj.display(obj.A);
+
+        System.out.println("Matrix B:");
+        
+        obj.display(obj.B);
+
+        obj.transpose();
+        
+        obj.sum();
+        
+        obj.multiply();
+        
+        obj.rowSum();
+        
+        obj.columnSum();
+        
+        obj.diagonalSum();
+        
+    }
+    
+}
+
+'''
+<img width="262" height="469" alt="image" src="https://github.com/user-attachments/assets/23e22f9e-4ca5-4908-96dd-8441f7f15ac1" />
+
+
+
 
 
 
