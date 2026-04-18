@@ -297,6 +297,70 @@ class Distance {
 '''
 <img width="548" height="197" alt="image" src="https://github.com/user-attachments/assets/4919e0d6-4fbf-4e9e-b5bd-6ab0f7ae13ec" />
 
+## assi-7
+'''
+
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        ArrayOperations obj = new ArrayOperations();
+
+        System.out.println("Original Array:");
+        
+        obj.displayArray();
+
+        obj.reverseArray();
+
+        System.out.println("Reversed Array:");
+        
+        obj.displayArray();
+    }
+    
+}
+
+ class ArrayOperations {
+
+    int[] arr = {10, 20, 30, 40, 50};  // predefined array
+
+ void reverseArray() {
+    
+        int start = 0, end = arr.length - 1;
+
+        while (start < end) {
+        
+            int temp = arr[start];
+            
+            arr[start] = arr[end];
+            
+            arr[end] = temp;
+
+            start++;
+            
+            end--;
+        }
+        
+    }
+
+       void displayArray() {
+       
+        for(int i = 0; i < arr.length; i++) {
+        
+            System.out.print(arr[i] + " ");
+            
+        }
+        
+        System.out.println();
+
+    }
+    
+}
+
+'''
+<img width="191" height="97" alt="image" src="https://github.com/user-attachments/assets/7db3c8d9-cfc6-4cd4-87cd-44605b9ac669" />
+
+
+
 
          
         
