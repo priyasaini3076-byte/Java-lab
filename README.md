@@ -481,6 +481,9 @@ public class MatrixOperations {
 
 <img width="246" height="385" alt="image" src="https://github.com/user-attachments/assets/913d55f0-cd06-4211-9868-f83e4e0f4de6" />
 
+<img width="282" height="295" alt="image" src="https://github.com/user-attachments/assets/509d7a86-abc7-43e0-8cb6-3ba6a5fa71d7" />
+
+
 
 
 
