@@ -592,3 +592,72 @@ class E extends A {
  <img width="273" height="349" alt="image" src="https://github.com/user-attachments/assets/f6d41e4d-2c99-45b5-b40b-53c6c5584bae" />
 
  
+## assi-11
+'''
+
+
+class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A (Normal): " + i);
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B (Normal): " + i);
+        }
+    }
+}
+
+class C extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C (Normal): " + i);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        A a = new A();
+        B b = new B();
+        C c = new C();
+
+        //  Without Thread (Sequential)
+        System.out.println("----- WITHOUT THREAD -----");
+        a.print();
+        b.print();
+        c.print();
+
+        //  With Thread (Concurrent)
+        System.out.println("----- WITH THREAD -----");
+        a.start();
+        b.start();
+        c.start();
+    }
+}
+'''
+
+https://private-user-images.githubusercontent.com/259805260/579954550-b1c26b8a-0f15-4df4-9037-1ae81ee8f02e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzcxMzA2NTQsIm5iZiI6MTc3NzEzMDM1NCwicGF0aCI6Ii8yNTk4MDUyNjAvNTc5OTU0NTUwLWIxYzI2YjhhLTBmMTUtNGRmNC05MDM3LTFhZTgxZWU4ZjAyZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQyNVQxNTE5MTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZTIwNWFmNGNiYWFhZTQxOTA5MTFiYmQwODMyMDEwNDZhYjVjY2EzMGM1MTNlMDM2OWU2MTM4NWNhMGFhOTYyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.q5F32eBX89SWkOmIK192tqMlFpT2cgD3s3O-1TV2W4w
