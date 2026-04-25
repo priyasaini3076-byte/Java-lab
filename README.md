@@ -487,26 +487,73 @@ public class MatrixOperations {
 <img width="282" height="295" alt="image" src="https://github.com/user-attachments/assets/509d7a86-abc7-43e0-8cb6-3ba6a5fa71d7" />
 
 
+## assi-10
 
+'''
 
+// Base class
+public class A {
 
+    void showA() {
+        System.out.println("Class A (Parent)");
+    }
 
+    public static void main(String[] args) {
 
+        // Single Inheritance
+        System.out.println("Single Inheritance:");
+        B obj1 = new B();
+        obj1.showA();
+        obj1.showB();
 
-         
-        
-   
+        // Multilevel Inheritance
+        System.out.println("\nMultilevel Inheritance:");
+        C obj2 = new C();
+        obj2.showA();
+        obj2.showB();
+        obj2.showC();
+
+        // Hierarchical Inheritance
+        System.out.println("\nHierarchical Inheritance:");
+        D obj3 = new D();
+        E obj4 = new E();
+
+        obj3.showA();
+        obj3.showD();
+
+        obj4.showA();
+        obj4.showE();
+    }
+}
+
+// Single Inheritance
+class B extends A {
+    void showB() {
+        System.out.println("Class B (Child of A)");
+    }
+}
+
+// Multilevel Inheritance
+class C extends B {
+    void showC() {
+        System.out.println("Class C (Child of B)");
+    }
+}
+
+// Hierarchical Inheritance
+class D extends A {
+    void showD() {
+        System.out.println("Class D (Another Child of A)");
+    }
+}
+
+class E extends A {
+    void showE() {
+        System.out.println("Class E (Another Child of A)");
+    }
+}
+
+ '''
+ <img width="273" height="349" alt="image" src="https://github.com/user-attachments/assets/f6d41e4d-2c99-45b5-b40b-53c6c5584bae" />
+
  
-
-
-
-
-
-
-
-
-
-
-
-
-
