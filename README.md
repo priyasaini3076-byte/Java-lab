@@ -1165,7 +1165,7 @@ public class PaintBrush extends Frame implements MouseListener, MouseMotionListe
 <img width="768" height="371" alt="image" src="https://github.com/user-attachments/assets/f48e4c3f-1b8f-4897-a84c-f390f4178d6f" />
 
 
-## assi-
+## assi- 19
 
 '''
 
@@ -1218,3 +1218,178 @@ public class Main {
 
 '''
 <img width="163" height="128" alt="image" src="https://github.com/user-attachments/assets/b3bb96e4-7e05-4ecd-b58a-af5d57994519" />
+
+
+## assi-20
+
+'''
+
+public class PackageDemo
+{
+    // Simulating package mypack
+    static class Addition
+    {
+        void add(int a, int b)
+        {
+            System.out.println("Sum = " + (a+b));
+        }
+    }
+
+    // Simulating subpackage mypack.subpack
+    static class Multiply
+    {
+        void mul(int a, int b)
+        {
+            System.out.println("Product = " + (a*b));
+        }
+    }
+
+    public static void main(String args[])
+    {
+        Addition obj1 = new Addition();
+        Multiply obj2 = new Multiply();
+
+        obj1.add(10,5);
+        obj2.mul(10,5);
+    }
+}
+
+'''
+
+<img width="128" height="44" alt="image" src="https://github.com/user-attachments/assets/4dbd883f-12be-48d6-9d2d-c9d5cee6c252" />
+
+## assi-21
+
+'''
+
+public class ExceptionDemo
+{
+    public static void main(String args[])
+    {
+        // Array Out of Bounds Exception
+        try
+        {
+            int arr[] = {10,20,30,40,50};
+
+            System.out.println("Array Elements:");
+            for(int i=0;i<=5;i++) // causes exception
+            {
+                System.out.println(arr[i]);
+            }
+        }
+
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Error: Array index is out of bounds!");
+        }
+
+
+        // Arithmetic Exception
+        try
+        {
+            int a=10, b=0;
+            int c=a/b; // causes exception
+
+            System.out.println("Result = " + c);
+        }
+
+        catch(ArithmeticException e)
+        {
+            System.out.println("Error: Division by zero is not allowed!");
+        }
+    }
+}
+
+'''
+
+<img width="397" height="240" alt="image" src="https://github.com/user-attachments/assets/5b68e124-5c63-40bd-bcf4-199267af0d86" />
+
+## assi-22
+
+'''
+
+
+import java.util.Scanner;
+
+class InvalidAgeException extends Exception
+{
+   InvalidAgeException(String msg)
+   {
+       super(msg);
+   }
+}
+
+public class StudentAgeTest
+{
+   public static void main(String args[])
+   {
+       Scanner sc = new Scanner(System.in);
+
+       try
+       {
+           System.out.print("Enter student age: ");
+           int age = sc.nextInt();
+
+           if(age < 18 || age > 25)
+           {
+               throw new InvalidAgeException("Age must be between 18 and 25");
+           }
+
+           System.out.println("Valid Student Age");
+       }
+
+       catch(InvalidAgeException e)
+       {
+           System.out.println("Exception: " + e.getMessage());
+       }
+   }
+}
+
+'''
+
+<img width="486" height="62" alt="image" src="https://github.com/user-attachments/assets/33e03b72-420e-4995-b341-d84c855b744f" />
+
+## assi-23
+
+'''
+
+import java.io.*;
+
+public class FileHandlingDemo
+{
+    public static void main(String args[]) throws Exception
+    {
+        // Writing into file
+        FileWriter fw = new FileWriter("data.txt");
+        fw.write("Hello Java");
+        fw.close();
+
+        // Character by Character Reading
+        System.out.println("Character by Character:");
+        FileReader fr = new FileReader("data.txt");
+
+        int ch;
+        while((ch = fr.read()) != -1)
+        {
+            System.out.print((char)ch);
+        }
+        fr.close();
+
+        System.out.println();
+
+        // Byte by Byte Reading
+        System.out.println("Byte by Byte:");
+        FileInputStream fin = new FileInputStream("data.txt");
+
+        int b;
+        while((b = fin.read()) != -1)
+        {
+            System.out.print((char)b);
+        }
+        fin.close();
+    }
+}
+
+'''
+
+<img width="270" height="146" alt="image" src="https://github.com/user-attachments/assets/c889e56c-6cb4-454d-a2af-a45727146f1c" />
