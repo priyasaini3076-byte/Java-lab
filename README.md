@@ -677,3 +677,71 @@ public class Main {
 <img width="136" height="468" alt="image" src="https://github.com/user-attachments/assets/6635becd-0353-42f2-ac98-b4e573b8e6f7" />
 <img width="145" height="457" alt="image" src="https://github.com/user-attachments/assets/842eda81-31b9-4abf-812a-6693e47fca95" />
 
+## assi-12
+'''
+
+
+class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A: " + i);
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B: " + i);
+        }
+    }
+}
+
+class C extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C: " + i);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        C c = new C();
+
+        try {
+            a.start();
+            a.join();   // wait until A finishes
+
+            b.start();
+            b.join();   // wait until B finishes
+
+            c.start();
+            c.join();   // wait until C finishes
+
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+'''
+
+<img width="59" height="469" alt="image" src="https://github.com/user-attachments/assets/67d13dca-2903-45b6-b934-42e745ace91b" />
+<img width="49" height="451" alt="image" src="https://github.com/user-attachments/assets/b4108c0d-14ce-4860-ae78-14177e6e374a" />
+<img width="48" height="457" alt="image" src="https://github.com/user-attachments/assets/e191dcf3-e54f-46eb-9ac1-c9073e86b9d1" />
+<img width="51" height="476" alt="image" src="https://github.com/user-attachments/assets/5c4810b8-d93f-4378-b860-3ae0eb6ab2eb" />
+ <img width="91" height="480" alt="image" src="https://github.com/user-attachments/assets/029559a1-db03-4904-8d09-9c5a58324cd6" />
+<img width="78" height="385" alt="image" src="https://github.com/user-attachments/assets/1ef2adbf-ba12-4374-954a-d43d9b8433b3" />
+<img width="51" height="481" alt="image" src="https://github.com/user-attachments/assets/cedca0a4-f3a8-4694-9d3e-4c6232f510a7" />
+<img width="52" height="463" alt="image" src="https://github.com/user-attachments/assets/cfb8dce0-d4b8-4c4b-b03b-ae58725cf1e4" />
+<img width="56" height="470" alt="image" src="https://github.com/user-attachments/assets/e153ce88-6a8e-40d4-9a64-adc42397ba42" />
+<img width="53" height="471" alt="image" src="https://github.com/user-attachments/assets/f2f46a5a-7bc5-488f-a369-fa20e51a4580" />
+<img width="49" height="481" alt="image" src="https://github.com/user-attachments/assets/f0bb0d72-35dc-4ffc-bfb6-2199016056e7" />
+<img width="69" height="465" alt="image" src="https://github.com/user-attachments/assets/3150ded1-4398-4d39-a4ad-c1d4351d07ac" />
+<img width="65" height="471" alt="image" src="https://github.com/user-attachments/assets/225c1faf-3afc-4b04-8e42-e8d4b7a0b3e9" />
+<img width="58" height="476" alt="image" src="https://github.com/user-attachments/assets/3adb7be4-829a-4632-9697-e5382ec863c4" />
+<img width="71" height="472" alt="image" src="https://github.com/user-attachments/assets/8b3120e4-efdf-4dce-b0d7-abb163d92f23" />
+<img width="72" height="480" alt="image" src="https://github.com/user-attachments/assets/9af4d1c6-4532-4cf2-8e43-c1ac57a99d48" />
