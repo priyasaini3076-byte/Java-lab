@@ -732,8 +732,7 @@ public class Main {
 <img width="59" height="469" alt="image" src="https://github.com/user-attachments/assets/67d13dca-2903-45b6-b934-42e745ace91b" />
 <img width="49" height="451" alt="image" src="https://github.com/user-attachments/assets/b4108c0d-14ce-4860-ae78-14177e6e374a" />
 <img width="48" height="457" alt="image" src="https://github.com/user-attachments/assets/e191dcf3-e54f-46eb-9ac1-c9073e86b9d1" />
-<img width="51" height="476" alt="image" src="https://github.com/user-attachments/assets/5c4810b8-d93f-4378-b860-3ae0eb6ab2eb" />
- <img width="91" height="480" alt="image" src="https://github.com/user-attachments/assets/029559a1-db03-4904-8d09-9c5a58324cd6" />
+<img width="51" height="476" alt="image" src="https://github.com/user-attachments/assets/5c4810b8-d93f-4378-b860-3ae0eb6ab2eb" /> <img width="91" height="480" alt="image" src="https://github.com/user-attachments/assets/029559a1-db03-4904-8d09-9c5a58324cd6" />
 <img width="78" height="385" alt="image" src="https://github.com/user-attachments/assets/1ef2adbf-ba12-4374-954a-d43d9b8433b3" />
 <img width="51" height="481" alt="image" src="https://github.com/user-attachments/assets/cedca0a4-f3a8-4694-9d3e-4c6232f510a7" />
 <img width="52" height="463" alt="image" src="https://github.com/user-attachments/assets/cfb8dce0-d4b8-4c4b-b03b-ae58725cf1e4" />
@@ -745,3 +744,94 @@ public class Main {
 <img width="58" height="476" alt="image" src="https://github.com/user-attachments/assets/3adb7be4-829a-4632-9697-e5382ec863c4" />
 <img width="71" height="472" alt="image" src="https://github.com/user-attachments/assets/8b3120e4-efdf-4dce-b0d7-abb163d92f23" />
 <img width="72" height="480" alt="image" src="https://github.com/user-attachments/assets/9af4d1c6-4532-4cf2-8e43-c1ac57a99d48" />
+
+## assi-13
+'''
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        int sum = a + b;
+
+        System.out.println("Result: " + sum);
+    }
+}
+
+'''
+
+<img width="270" height="78" alt="image" src="https://github.com/user-attachments/assets/f754b4cb-67b6-4ab5-85e8-ce16aab863c1" />
+
+
+## assi-14
+
+'''
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // 🔹 Taking 10 inputs (Registration Form)
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Email: ");
+        String email = sc.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = sc.nextLine();
+
+        System.out.print("Enter Gender: ");
+        String gender = sc.nextLine();
+
+        System.out.print("Enter Course: ");
+        String course = sc.nextLine();
+
+        System.out.print("Enter Address: ");
+        String address = sc.nextLine();
+
+        System.out.print("Enter Phone: ");
+        String phone = sc.nextLine();
+
+        System.out.print("Enter Age: ");
+        String age = sc.nextLine();
+
+        System.out.print("Enter City: ");
+        String city = sc.nextLine();
+
+        System.out.print("Enter State: ");
+        String state = sc.nextLine();
+
+        // 🔹 Display Data (Simulating Database Storage)
+        System.out.println("\n--- Registration Data ---");
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Password: " + password);
+        System.out.println("Gender: " + gender);
+        System.out.println("Course: " + course);
+        System.out.println("Address: " + address);
+        System.out.println("Phone: " + phone);
+        System.out.println("Age: " + age);
+        System.out.println("City: " + city);
+        System.out.println("State: " + state);
+
+        System.out.println("\nData Stored Successfully (Simulated)");
+    }
+}
+
+'''
+
+<img width="282" height="468" alt="image" src="https://github.com/user-attachments/assets/e1abaaf1-18e5-4939-b7bf-0dac061e0eff" />
+<img width="343" height="147" alt="image" src="https://github.com/user-attachments/assets/d802f3c3-1e27-4fa4-b7ae-20f3e00c3018" />
