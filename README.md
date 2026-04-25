@@ -1059,3 +1059,162 @@ public class Main {
 
 '''
 <img width="605" height="566" alt="image" src="https://github.com/user-attachments/assets/0b48f153-9257-456d-9405-56d06d9d0921" />
+
+## assi-18
+
+'''
+
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class PaintBrush extends Frame implements MouseListener, MouseMotionListener, ItemListener
+{
+    Choice colorChoice;
+    Choice widthChoice;
+
+    int x, y;
+    Color currentColor = Color.BLACK;
+    int brushSize = 5;
+
+    public PaintBrush()
+    {
+        setTitle("Simple Paint Brush");
+        setSize(600,500);
+        setLayout(new FlowLayout());
+
+        // Color Selection
+        add(new Label("Select Color:"));
+        colorChoice = new Choice();
+        colorChoice.add("Black");
+        colorChoice.add("Red");
+        colorChoice.add("Blue");
+        colorChoice.add("Green");
+        add(colorChoice);
+
+        // Width Selection
+        add(new Label("Brush Width:"));
+        widthChoice = new Choice();
+        widthChoice.add("5");
+        widthChoice.add("10");
+        widthChoice.add("15");
+        widthChoice.add("20");
+        add(widthChoice);
+
+        colorChoice.addItemListener(this);
+        widthChoice.addItemListener(this);
+
+        addMouseListener(this);
+        addMouseMotionListener(this);
+
+        // Closing Window
+        addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent we){
+                System.exit(0);
+            }
+        });
+
+        setVisible(true);
+    }
+
+    public void itemStateChanged(ItemEvent e)
+    {
+        if(colorChoice.getSelectedItem().equals("Black"))
+            currentColor = Color.BLACK;
+        if(colorChoice.getSelectedItem().equals("Red"))
+            currentColor = Color.RED;
+        if(colorChoice.getSelectedItem().equals("Blue"))
+            currentColor = Color.BLUE;
+        if(colorChoice.getSelectedItem().equals("Green"))
+            currentColor = Color.GREEN;
+
+        brushSize = Integer.parseInt(widthChoice.getSelectedItem());
+    }
+
+    public void mousePressed(MouseEvent e)
+    {
+        x = e.getX();
+        y = e.getY();
+    }
+
+    public void mouseDragged(MouseEvent e)
+    {
+        Graphics g = getGraphics();
+        g.setColor(currentColor);
+        g.fillOval(e.getX(), e.getY(), brushSize, brushSize);
+
+        x = e.getX();
+        y = e.getY();
+    }
+
+    // Required empty methods
+    public void mouseClicked(MouseEvent e){}
+    public void mouseReleased(MouseEvent e){}
+    public void mouseEntered(MouseEvent e){}
+    public void mouseExited(MouseEvent e){}
+    public void mouseMoved(MouseEvent e){}
+
+    public static void main(String args[])
+    {
+        new PaintBrush();
+    }
+}
+
+'''
+
+<img width="768" height="371" alt="image" src="https://github.com/user-attachments/assets/f48e4c3f-1b8f-4897-a84c-f390f4178d6f" />
+
+
+## assi-
+
+'''
+
+class Add {
+    void sum(int a, int b) {
+        System.out.println("Sum = " + (a+b));
+    }
+}
+
+class Subtract {
+    void sub(int a, int b) {
+        System.out.println("Difference = " + (a-b));
+    }
+}
+
+class Multiply {
+    void mul(int a, int b) {
+        System.out.println("Product = " + (a*b));
+    }
+}
+
+class Divide {
+    void div(int a, int b) {
+        System.out.println("Quotient = " + (a/b));
+    }
+}
+
+class Modulus {
+    void mod(int a, int b) {
+        System.out.println("Remainder = " + (a%b));
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+
+        Add a = new Add();
+        Subtract s = new Subtract();
+        Multiply m = new Multiply();
+        Divide d = new Divide();
+        Modulus mo = new Modulus();
+
+        a.sum(20,10);
+        s.sub(20,10);
+        m.mul(20,10);
+        d.div(20,10);
+        mo.mod(20,10);
+    }
+}
+
+'''
+<img width="163" height="128" alt="image" src="https://github.com/user-attachments/assets/b3bb96e4-7e05-4ecd-b58a-af5d57994519" />
