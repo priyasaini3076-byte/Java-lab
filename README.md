@@ -835,3 +835,81 @@ public class Main {
 
 <img width="282" height="468" alt="image" src="https://github.com/user-attachments/assets/e1abaaf1-18e5-4939-b7bf-0dac061e0eff" />
 <img width="343" height="147" alt="image" src="https://github.com/user-attachments/assets/d802f3c3-1e27-4fa4-b7ae-20f3e00c3018" />
+
+## assi-15
+
+'''
+
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        JFrame f = new JFrame("Calculator");
+
+        // Text fields
+        JTextField t1 = new JTextField();
+        JTextField t2 = new JTextField();
+        JTextField result = new JTextField();
+
+        // Buttons
+        JButton add = new JButton("+");
+        JButton sub = new JButton("-");
+        JButton mul = new JButton("*");
+        JButton div = new JButton("/");
+
+        // Set positions
+        t1.setBounds(50, 50, 150, 30);
+        t2.setBounds(50, 100, 150, 30);
+        result.setBounds(50, 150, 150, 30);
+
+        add.setBounds(220, 50, 50, 30);
+        sub.setBounds(280, 50, 50, 30);
+        mul.setBounds(220, 100, 50, 30);
+        div.setBounds(280, 100, 50, 30);
+
+        // Action logic
+        ActionListener al = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    int a = Integer.parseInt(t1.getText());
+                    int b = Integer.parseInt(t2.getText());
+                    int res = 0;
+
+                    if (e.getSource() == add) res = a + b;
+                    if (e.getSource() == sub) res = a - b;
+                    if (e.getSource() == mul) res = a * b;
+                    if (e.getSource() == div) res = a / b;
+
+                    result.setText(String.valueOf(res));
+
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(f, "Invalid Input");
+                }
+            }
+        };
+
+        // Add listeners
+        add.addActionListener(al);
+        sub.addActionListener(al);
+        mul.addActionListener(al);
+        div.addActionListener(al);
+
+        // Add components
+        f.add(t1); f.add(t2); f.add(result);
+        f.add(add); f.add(sub); f.add(mul); f.add(div);
+
+        // Frame settings
+        f.setSize(400, 300);
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+
+'''
+
+<img width="719" height="532" alt="image" src="https://github.com/user-attachments/assets/938ff50c-abda-4fd3-a23e-06b2a9c040bc" />
+
