@@ -913,3 +913,149 @@ public class Main {
 
 <img width="719" height="532" alt="image" src="https://github.com/user-attachments/assets/938ff50c-abda-4fd3-a23e-06b2a9c040bc" />
 
+## assi-16
+
+'''
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int[][] A = new int[2][2];
+        int[][] B = new int[2][2];
+        int[][] C = new int[2][2];
+
+        System.out.println("Enter Matrix A:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                A[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Enter Matrix B:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                B[i][j] = sc.nextInt();
+            }
+        }
+
+        // Addition
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                C[i][j] = A[i][j] + B[i][j];
+            }
+        }
+
+        System.out.println("Result Matrix:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+'''
+
+<img width="153" height="326" alt="image" src="https://github.com/user-attachments/assets/f06f9414-66ae-49d2-a183-da67a98a6a89" />
+
+
+## assi-17
+
+'''
+
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+class DrawPanel extends JPanel {
+    String shape = "";
+
+    public void setShape(String s) {
+        shape = s;
+        repaint();
+    }
+
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        if (shape.equals("Circle"))
+            g.drawOval(150, 100, 100, 100);
+
+        if (shape.equals("Oval"))
+            g.drawOval(120, 100, 150, 80);
+
+        if (shape.equals("Rectangle"))
+            g.drawRect(120, 100, 150, 80);
+
+        if (shape.equals("Square"))
+            g.drawRect(150, 100, 100, 100);
+
+        if (shape.equals("Line"))
+            g.drawLine(100, 100, 250, 200);
+
+        if (shape.equals("Triangle")) {
+            int x[] = {150, 200, 250};
+            int y[] = {200, 100, 200};
+            g.drawPolygon(x, y, 3);
+        }
+
+        if (shape.equals("Arc"))
+            g.drawArc(120, 100, 150, 100, 0, 180);
+
+        if (shape.equals("RoundRect"))
+            g.drawRoundRect(120, 100, 150, 80, 30, 30);
+
+        if (shape.equals("Filled Circle"))
+            g.fillOval(150, 100, 100, 100);
+
+        if (shape.equals("Filled Rect"))
+            g.fillRect(120, 100, 150, 80);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        JFrame f = new JFrame("Shapes using Buttons");
+        f.setSize(500, 400);
+        f.setLayout(null);
+
+        DrawPanel panel = new DrawPanel();
+        panel.setBounds(0, 100, 500, 300);
+
+        String names[] = {
+            "Circle", "Oval", "Rectangle", "Square", "Line",
+            "Triangle", "Arc", "RoundRect", "Filled Circle", "Filled Rect"
+        };
+
+        int x = 10;
+
+        for (int i = 0; i < 10; i++) {
+            JButton btn = new JButton(names[i]);
+            btn.setBounds(x, 10, 120, 30);
+            x += 125;
+
+            btn.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    panel.setShape(((JButton)e.getSource()).getText());
+                }
+            });
+
+            f.add(btn);
+        }
+
+        f.add(panel);
+
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+
+'''
+<img width="605" height="566" alt="image" src="https://github.com/user-attachments/assets/0b48f153-9257-456d-9405-56d06d9d0921" />
