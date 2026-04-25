@@ -24,7 +24,7 @@
 [program-12 Using the concept of multithreading the output of all three threads must be synchronised (use join method)](#assi-12)
 
 
-[program-13 Addition of 2 numbers using Swing.]hreading(#assi-13)
+[program-13 Addition of 2 numbers using Swing](#assi-13)
 
 
 [program-14 Make a registration form with 10 elements and send the data into database (use JDBC connectivity).](#assi-14)
