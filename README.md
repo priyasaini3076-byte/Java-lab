@@ -1,4 +1,4 @@
- [Program 1 WAP for arithmetic logic](#assi-1)
+[Program 1 WAP for arithmetic logic](#assi-1)
 
 [Program 2 WAP for Hello World](#assi-2)
 
@@ -48,10 +48,6 @@
 [Program-23 File Handling Programs](#assi-23)
 
 [Program-24 Inheritance Programs, using interface and abstract classes](#assi-24)
-
-
-
-
 
 
 ## assi-1
@@ -679,7 +675,6 @@ public class Main {
 
 ## assi-12
 '''
-
 
 class A extends Thread {
     public void run() {
